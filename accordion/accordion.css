@@ -1,0 +1,38 @@
+
+:root{
+--left-side-border:#6867ff;
+--dark-top:#373636;
+--white-bg:#fff;
+}
+
+/** accordion **/
+.accordion-block{
+  width:94%;
+  margin:0 auto;
+}
+  .accordion-box{
+    margin:1rem auto 1rem;
+  }
+  
+  .accordion-top{
+    display: flex;
+    justify-content:space-between;
+  background:var(--dark-top);
+  color:var(--white);
+    padding:1rem;
+  }
+  .accordion-text{
+    padding:.8rem;
+     background:var(--white-bg);
+  }
+   .accordion-top:after{
+  content: '';
+position: absolute;
+background-color: var(--left-side-border);
+width:.8rem;
+  height:100%;
+top:50%;
+    bottom:50%;
+    left:0;
+   }
+    /** /accordion **/
